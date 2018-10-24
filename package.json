@@ -1,0 +1,16 @@
+{
+  "name": "ABH-DevDays-JavaProject-master",
+  "version": "1.0.0",
+  "description": "The purpose of this repository is to allow people to practice their Java and JavaScript skills by adding Features to an existing and working Play Fraemwork and Ember.JS application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "sbt": "0.0.11"
+  }
+}

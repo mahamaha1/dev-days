@@ -1,0 +1,1 @@
+- make a "discover" command not require a directory

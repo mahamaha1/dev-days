@@ -1,0 +1,9 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.settings
+/RUNNING_PID
+sh.exe.stackdump
+.DS_Store
