@@ -156,11 +156,13 @@
                   </div>
                 </div>
               </div>
+              
               <div class="map-canvas"></div>
               {{yield}}
               <h2 id="title"></h2>
               {{google-map latitude=model.restaurant.latitude longitude=model.restaurant.longitude}}
-
+             <!-- {{google-map-marker latitude=model.restaurant.latitude longitude=model.restaurant.longitude draggable=true onDrag=(action "handleDrag") label="1" title="Marker"}}
+              -->
             </div>
           </div>
         </div>
