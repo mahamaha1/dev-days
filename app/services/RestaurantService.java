@@ -99,7 +99,11 @@ public class RestaurantService extends BaseService {
 		if (restaurantFilter.sortBy.equals("price")) {
 			criteria.addOrder(Order.desc("priceRange"));
 		}
-
+        // ***********************************************************************************************
+		if (Integer.parseInt(restaurantFilter.priceFilter) != 0) {
+			criteria.add(Restrictions.eq("priceRange", Integer.parseInt(restaurantFilter.priceFilter)));
+		}
+		// ***********************************************************************************************
 		criteria.addOrder(Order.asc("name"));
 
 		List<Restaurant> restaurants = criteria.list();

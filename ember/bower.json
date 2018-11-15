@@ -6,6 +6,7 @@
     "ember-qunit-notifications": "0.1.0",
     "font-awesome": "~4.5.0",
     "bootstrap": "^3.3.7",
-    "countdownjs": "^2.6.0"
+    "countdownjs": "^2.6.0",
+    "ember-uploader": "0.3.11"
   }
 }

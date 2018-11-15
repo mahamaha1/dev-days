@@ -31,6 +31,8 @@ GET     /api/v1/getPopularRestaurants                       controllers.Restaura
 GET     /api/v1/getPopularLocations                         controllers.RestaurantController.getPopularLocations
 
 POST    /api/v1/postReview                                  controllers.RestaurantController.postReview
+POST    /api/v1/fileUpload                                 controllers.RestaurantController.updatePicture
+
 
 # RESTAURANT RESERVATION MANAGEMENT ROUTES -----------------------------------------------------------------------------
 

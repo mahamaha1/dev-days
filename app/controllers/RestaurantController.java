@@ -24,6 +24,8 @@ public class RestaurantController extends BaseController {
 	private static final String NAME_FILTER = "nameFilter";
 	private static final String CITY_FILTER = "cityFilter";
 	private static final String SORT_BY = "sortBy";
+	private static final String FILTER_BY = "filterBy";
+	private static final String PRICE_FILTER = "priceFilter";
 
 	private static final Integer DEFAULT_PAGE_NUMBER = 1;
 	private static final Integer DEFAULT_PAGE_SIZE = 9;
@@ -82,6 +84,10 @@ public class RestaurantController extends BaseController {
 						.setNameFilter(request().getQueryString(NAME_FILTER))
 						.setCityFilter(!StringUtil.isNullOrEmpty(cityFilter) ? UUID.fromString(cityFilter) : null)
 						.setSort(request().getQueryString(SORT_BY))
+						//.setFilter(request().getQueryString(FILTER_BY))
+						.setPriceFilter(request().getQueryString(PRICE_FILTER))
+
+
 		));
 	}
 

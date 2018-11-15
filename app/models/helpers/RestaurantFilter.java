@@ -21,6 +21,9 @@ public class RestaurantFilter {
 	 * The Name.
 	 */
 	public String name;
+	public String price;
+	public String priceFilter ;
+	public String filter;
 	/**
 	 * The City id.
 	 */
@@ -29,6 +32,7 @@ public class RestaurantFilter {
 	 * The Sort by.
 	 */
 	public String sortBy;
+
 
 	private RestaurantFilter() { }
 
@@ -83,6 +87,7 @@ public class RestaurantFilter {
 		this.name = name;
 		return this;
 	}
+	
 
 	/**
 	 * Sets city filter.
@@ -105,9 +110,27 @@ public class RestaurantFilter {
 	public RestaurantFilter setSort(String sortBy) {
 		if (sortBy != null && !sortBy.equals("")) {
 			this.sortBy = sortBy.toLowerCase();
-		} else {
+		} 
+		else 
+		{
 			this.sortBy = "name";
 		}
 		return this;
 	}
+
+		/**
+	 * Sets sort.
+	 *
+	 * @param priceFilter the sort by
+	 * @return the sort
+	 */
+	public RestaurantFilter setPriceFilter(String priceFilter) {
+		
+			this.priceFilter =priceFilter;
+		
+		return this;
+	}
+	
+
+	
 }

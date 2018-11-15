@@ -37,6 +37,7 @@
     "ember-countdown": "^1.0.0",
     "ember-data": "^2.7.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-file-upload": "^2.5.3",
     "ember-font-awesome": "^3.1.1",
     "ember-g-map": "0.0.25",
     "ember-google-map": "0.0.26",
@@ -49,6 +50,7 @@
     "loader.js": "^4.0.1"
   },
   "dependencies": {
+    "ember-cli-uploader": "^0.3.11",
     "ember-google-maps": "^2.0.5"
   }
 }
